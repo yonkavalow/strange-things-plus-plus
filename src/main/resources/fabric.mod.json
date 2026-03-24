@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "strange-things-plus-plus",
+  "version": "${version}",
+  "name": "strange-things-plus-plus",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/strange-things-plus-plus/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.pillowfillow.strangeThingsPlusPlus.client.StrangeThingsPlusPlusDataGenerator"
+    ],
+    "client": [
+      "org.pillowfillow.strangeThingsPlusPlus.client.StrangeThingsPlusPlusClient"
+    ],
+    "main": [
+      "org.pillowfillow.strangeThingsPlusPlus.StrangeThingsPlusPlus"
+    ]
+  },
+  "mixins": [
+    "strange-things-plus-plus.mixins.json",
+    {
+      "config": "strange-things-plus-plus.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
