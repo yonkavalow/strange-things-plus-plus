@@ -2,34 +2,26 @@
   "schemaVersion": 1,
   "id": "strange-things-plus-plus",
   "version": "${version}",
-  "name": "strange-things-plus-plus",
-  "description": "",
-  "authors": [],
+  "name": "Strange Things Plus Plus",
+  "description": "Addon for Stranger Things that adds Warped Stone and swaps stone in the Upside Down.",
+  "authors": [
+    "PillowFillow"
+  ],
   "contact": {},
   "license": "All-Rights-Reserved",
-  "icon": "assets/strange-things-plus-plus/icon.png",
   "environment": "*",
   "entrypoints": {
-    "fabric-datagen": [
-      "org.pillowfillow.strangeThingsPlusPlus.client.StrangeThingsPlusPlusDataGenerator"
-    ],
-    "client": [
-      "org.pillowfillow.strangeThingsPlusPlus.client.StrangeThingsPlusPlusClient"
-    ],
     "main": [
       "org.pillowfillow.strangeThingsPlusPlus.StrangeThingsPlusPlus"
     ]
   },
   "mixins": [
-    "strange-things-plus-plus.mixins.json",
-    {
-      "config": "strange-things-plus-plus.client.mixins.json",
-      "environment": "client"
-    }
+    "strange-things-plus-plus.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": "${minecraft_version}",
+    "strangerthings": "*"
   }
 }

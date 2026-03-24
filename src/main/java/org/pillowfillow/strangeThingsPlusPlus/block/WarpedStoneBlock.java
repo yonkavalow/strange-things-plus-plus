@@ -7,8 +7,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 
-public class MysteriousBlock extends Block {
-    public MysteriousBlock(Settings settings) {
+public class WarpedStoneBlock extends Block {
+    public WarpedStoneBlock(Settings settings) {
         super(settings);
     }
 

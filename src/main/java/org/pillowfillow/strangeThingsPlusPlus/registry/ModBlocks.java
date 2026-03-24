@@ -13,12 +13,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import org.pillowfillow.strangeThingsPlusPlus.StrangeThingsPlusPlus;
-import org.pillowfillow.strangeThingsPlusPlus.block.MysteriousBlock;
+import org.pillowfillow.strangeThingsPlusPlus.block.WarpedStoneBlock;
 
 public final class ModBlocks {
     public static final Block WARPED_STONE = registerBlock(
             "warped_stone",
-            new MysteriousBlock(AbstractBlock.Settings.create()
+            new WarpedStoneBlock(AbstractBlock.Settings.create()
                     .mapColor(MapColor.DARK_AQUA)
                     .strength(4.0f, 12.0f)
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)
