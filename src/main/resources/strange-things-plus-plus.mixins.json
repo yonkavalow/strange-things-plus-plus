@@ -4,6 +4,7 @@
   "package": "org.pillowfillow.strangeThingsPlusPlus.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "WorldSyncEventsMixin"
   ],
   "injectors": {
     "defaultRequire": 1
